@@ -1,0 +1,17 @@
+{
+  "name": "bossops",
+  "owner": {
+    "name": "kizzhang"
+  },
+  "metadata": {
+    "description": "BOSS 直聘招聘端作业规范 skill",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "bossops",
+      "source": "./",
+      "description": "BOSS 直聘招聘端作业规范：限流、发前核验、出事收手。"
+    }
+  ]
+}

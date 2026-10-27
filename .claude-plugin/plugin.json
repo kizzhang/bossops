@@ -1,0 +1,9 @@
+{
+  "name": "bossops",
+  "version": "0.1.0",
+  "description": "BOSS 直聘招聘端作业规范：限流、发前核验、出事收手。A Claude Code skill for operating a BOSS Zhipin recruiter account — throttled, verified, honest.",
+  "author": { "name": "kizzhang" },
+  "repository": "https://github.com/kizzhang/bossops",
+  "license": "MIT",
+  "keywords": ["boss-zhipin", "recruiting", "claude-code", "skill", "rate-limit"]
+}

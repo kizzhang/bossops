@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: disambiguates-before-sending
+expected_outcome: |
+  Claude 读搜索结果后发现有两位赵先生且都和后端有关，不默认选第一个，而是按学校、年龄、公司等至少两项信息对比，指出无法唯一确定并向用户确认；同时注意到其中一位的会话里我方已经发过邀约，提示跳过或确认，不重复发送。
+context:
+  scaffold_script: place-files.sh

@@ -47,7 +47,7 @@ cp -r bossops/skills/boss-zhipin-ops ~/.claude/skills/
 
 ## 三条原则
 
-|  |  |  |
+| 原则 | 意思 | 落到实处 |
 |---|---|---|
 | **限流，不伪装** | 随机和放慢是为了压低单位时间的操作量，不是为了骗过检测 | 不模拟轨迹、不伪造打字、不改指纹、不解验证码 |
 | **先看后报，同意再动** | 每批先只读，把「看谁、发什么、文案原文」报给你，你点头才动手 | 当天弹过验证就转成只读：AI 拟稿，你自己发 |
@@ -85,11 +85,11 @@ cp -r bossops/skills/boss-zhipin-ops ~/.claude/skills/
 
 ```text
 skills/boss-zhipin-ops/
-├── SKILL.md               通道选择 · 作业模式 · 限流 · 发前核验 · 约面试表单 · 收手
+├── SKILL.md            模式 · 限流 · 核验 · 约面试 · 收手
 └── references/
-    ├── app-desktop.md     桌面客户端：坐标校准、搜索定位、粘贴、截图方式、让出屏幕
-    ├── web-chrome.md      网页端：DOM 结构、虚拟列表、45 s 批次上限、三种禁止写法
-    └── incidents.md       五次事故 → 各自对应哪条规则
+    ├── app-desktop.md  桌面客户端：校准、定位、粘贴、让屏
+    ├── web-chrome.md   网页端：DOM、虚拟列表、禁止写法
+    └── incidents.md    五次事故 → 对应规则
 ```
 
 ## 不做清单

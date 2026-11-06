@@ -1,6 +1,6 @@
 ---
 name: boss-zhipin-ops
-description: 规定在 BOSS 直聘招聘端（网页端或桌面客户端）代用户读简历、发消息、约面试时的作业方式：作业模式、限流与外发上限、发前身份核验、防误发、回执落地，以及弹出「安全验证」、掉线、卡死时如何收手。凡是要在 BOSS 里点开会话、批量看简历、给候选人发约面或婉拒、填「约面试」表单、改期或撤销邀约，或用户提到防风控、风控、安全验证、被 ban、BOSS 掉线，都先读它，哪怕只发一两条。Use for any BOSS Zhipin (zhipin.com) recruiter automation.
+description: 规定在 BOSS 直聘招聘端（网页端或桌面客户端）代用户读简历、发消息、约面试时的作业方式：作业模式、限流与外发上限、发前身份核验、防误发、回执落地，以及弹出「安全验证」、掉线、卡死时如何收手。凡是要在 BOSS 里点开会话、批量看简历、给候选人发约面或婉拒、填「约面试」表单、改期或撤销邀约，或用户提到防风控、风控、安全验证、被 ban、BOSS 掉线，都先读它，哪怕只发一两条。候选人确定约面后要做面试简历评估包（SWOT、打分、面试问题、打包 PDF）时，读 references/interview-pack.md。 Use for any BOSS Zhipin (zhipin.com) recruiter automation.
 ---
 
 # BOSS 直聘招聘端作业规范
@@ -144,8 +144,13 @@ M1 下给用户的「发送队列」格式：每条一行——发给谁、在�
 - 不代用户登录、不碰账号凭据
 - 不购买任何付费推广
 
+## 十一、面试前的简历评估包
+
+候选人**确定约面**后，可以做一份「评估页（5 项打分、SWOT、针对简历的面试问题）+ 原始简历」的 PDF，给面试官面试时看。做法、打分口径、数据格式、生成脚本见 [references/interview-pack.md](references/interview-pack.md)，脚本和样板在 `scripts/`。只给确定约面的人做；评估包含候选人简历和评价，**不要往外发**。
+
 ## 参考文件
 
 - **桌面客户端**：见 [references/app-desktop.md](references/app-desktop.md)（坐标校准、搜索定位、粘贴、截图方式、让屏）。用客户端前读。
 - **网页端**：见 [references/web-chrome.md](references/web-chrome.md)（DOM 结构、虚拟列表、批次与超时、禁止的写法）。用网页端前读。
 - **事故记录**：见 [references/incidents.md](references/incidents.md)（每次出事的经过和对应规则）。规则拿不准时读，理解为什么。
+- **面试简历评估包**：见 [references/interview-pack.md](references/interview-pack.md)（什么时候做、5 项打分口径、数据格式、生成与检查）。生成脚本 [scripts/build_pack.py](scripts/build_pack.py)，虚构样板 [scripts/cands_example.py](scripts/cands_example.py)。

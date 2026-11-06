@@ -123,7 +123,11 @@ skills/boss-zhipin-ops/
 ├── references/
 │   ├── app-desktop.md  桌面客户端：校准、定位、粘贴、让屏
 │   ├── web-chrome.md   网页端：DOM、虚拟列表、禁止写法
-│   └── incidents.md    五次事故 → 对应规则
+│   ├── incidents.md    五次事故 → 对应规则
+│   └── interview-pack.md  面试前的简历评估包：打分口径 · SWOT · 面试问题
+├── scripts/
+│   ├── build_pack.py   生成评估包 PDF
+│   └── cands_example.py  虚构样板数据
 └── evals/              3 个测试场景
 ```
 
